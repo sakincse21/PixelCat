@@ -1,0 +1,16 @@
+{
+  "logical_width": 60,
+  "logical_height": 66,
+  "scales": [
+    2,
+    3,
+    4,
+    6
+  ],
+  "eye_room": {
+    "left": 2,
+    "right": 2,
+    "up": 2,
+    "down": 2
+  }
+}

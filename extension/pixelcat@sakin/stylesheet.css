@@ -1,0 +1,16 @@
+/* Speech bubble: matches the cat's palette. */
+.pixelcat-bubble {
+    background-color: #fdf7f2;
+    border: 3px solid #3a1d1a;
+    border-radius: 0;
+    padding: 6px 10px;
+    max-width: 260px;
+    box-shadow: 3px 3px 0 0 rgba(58, 29, 26, 0.35);
+}
+
+.pixelcat-bubble-label {
+    color: #3a1d1a;
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: bold;
+}

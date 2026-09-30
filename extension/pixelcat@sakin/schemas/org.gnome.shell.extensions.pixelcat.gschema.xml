@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.pixelcat" path="/org/gnome/shell/extensions/pixelcat/">
+
+    <key name="scale" type="i">
+      <default>3</default>
+      <range min="2" max="6"/>
+      <summary>Sprite scale</summary>
+      <description>Integer scale factor. Available: 2, 3, 4, 6 (nearest is used).</description>
+    </key>
+
+    <key name="corner" type="s">
+      <default>'bottom-right'</default>
+      <choices>
+        <choice value='bottom-right'/>
+        <choice value='bottom-left'/>
+        <choice value='top-right'/>
+        <choice value='top-left'/>
+      </choices>
+      <summary>Screen corner</summary>
+      <description>Corner of the primary monitor's work area where the cat sits.</description>
+    </key>
+
+    <key name="margin" type="i">
+      <default>16</default>
+      <range min="0" max="400"/>
+      <summary>Margin from the corner (px)</summary>
+    </key>
+
+    <key name="position-x" type="i">
+      <default>-1</default>
+      <summary>Custom horizontal position</summary>
+      <description>Screen X coordinate. -1 means use corner placement.</description>
+    </key>
+
+    <key name="position-y" type="i">
+      <default>-1</default>
+      <summary>Custom vertical position</summary>
+      <description>Screen Y coordinate. -1 means use corner placement.</description>
+    </key>
+
+    <key name="fade-on-hover" type="b">
+      <default>true</default>
+      <summary>Fade when the pointer is over the cat</summary>
+      <description>The cat is always click-through; fading just keeps it from hiding content.</description>
+    </key>
+
+    <key name="blink-min-ms" type="i">
+      <default>2500</default>
+      <range min="500" max="20000"/>
+      <summary>Shortest time between blinks (ms)</summary>
+    </key>
+
+    <key name="blink-max-ms" type="i">
+      <default>6000</default>
+      <range min="500" max="30000"/>
+      <summary>Longest time between blinks (ms)</summary>
+    </key>
+
+    <key name="messages-enabled" type="b">
+      <default>true</default>
+      <summary>Show idle messages</summary>
+    </key>
+
+    <key name="idle-minutes" type="u">
+      <default>5</default>
+      <range min="1" max="480"/>
+      <summary>Minutes of inactivity before the first message</summary>
+    </key>
+
+    <key name="message-repeat-minutes" type="u">
+      <default>10</default>
+      <range min="1" max="480"/>
+      <summary>Minutes between messages while you stay idle</summary>
+    </key>
+
+    <key name="sleep-enabled" type="b">
+      <default>true</default>
+      <summary>Let the cat fall asleep when idle for a long time</summary>
+    </key>
+
+    <key name="sleep-minutes" type="u">
+      <default>15</default>
+      <range min="1" max="720"/>
+      <summary>Minutes of inactivity before the cat falls asleep</summary>
+    </key>
+
+    <key name="sleep-seconds" type="u">
+      <default>300</default>
+      <range min="5" max="7200"/>
+      <summary>Seconds of inactivity before the cat falls asleep</summary>
+      <description>Seconds of inactivity before falling asleep. Lower values (5-15s) are great for testing.</description>
+    </key>
+
+    <key name="yawn-enabled" type="b">
+      <default>true</default>
+      <summary>Yawn when getting drowsy</summary>
+      <description>Plays yawning animations before falling asleep.</description>
+    </key>
+
+    <key name="yawn-interval-seconds" type="u">
+      <default>4</default>
+      <range min="2" max="30"/>
+      <summary>Seconds between yawns</summary>
+      <description>Time between consecutive yawns while drowsy.</description>
+    </key>
+
+    <key name="yawn-count" type="u">
+      <default>3</default>
+      <range min="1" max="10"/>
+      <summary>Number of yawns before deep sleep</summary>
+      <description>How many times the cat yawns before falling into deep sleep.</description>
+    </key>
+
+    <key name="hunger-enabled" type="b">
+      <default>true</default>
+      <summary>Cat gets hungry over time</summary>
+      <description>When hungry, the cat displays an angry face until fed with a treat.</description>
+    </key>
+
+    <key name="hunger-minutes" type="u">
+      <default>10</default>
+      <range min="1" max="240"/>
+      <summary>Minutes before the cat gets hungry</summary>
+      <description>How many minutes after starting or feeding before the cat gets hungry again.</description>
+    </key>
+
+    <key name="hunger-seconds" type="u">
+      <default>300</default>
+      <range min="5" max="7200"/>
+      <summary>Seconds before the cat gets hungry</summary>
+      <description>How many seconds after starting or feeding before the cat gets hungry again. Set to 5-15s for quick testing.</description>
+    </key>
+
+    <key name="test-action" type="s">
+      <default>''</default>
+      <summary>Test action</summary>
+      <description>Transient action triggered from settings window (e.g. yawn, hunger, sleep, wake).</description>
+    </key>
+
+    <key name="messages" type="as">
+      <default>["...still here.", "Water break?", "Stretch your back.", "Eyes need rest too.", "Meow.", "Take your time.", "Long session. You okay?", "I'll keep watch."]</default>
+      <summary>Idle messages</summary>
+      <description>One is picked at random (never the same twice in a row). Keep them short.</description>
+    </key>
+
+  </schema>
+</schemalist>
+

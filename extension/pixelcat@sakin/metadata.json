@@ -1,0 +1,8 @@
+{
+  "uuid": "pixelcat@sakin",
+  "name": "Pixel Cat",
+  "description": "A tiny pixel-art desktop cat companion that follows your mouse cursor with its eyes, blinks, yawns when sleepy, and asks to be fed when hungry.",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "settings-schema": "org.gnome.shell.extensions.pixelcat",
+  "version-name": "0.1.0"
+}
