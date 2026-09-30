@@ -4,7 +4,13 @@ A tiny, charming pixel-art desktop cat companion for GNOME Shell on Linux / Wayl
 
 Its eyes follow your mouse cursor smoothly across screens, it blinks naturally, yawns cutely when you take a break, drifts off to sleep during long idle periods, and gets hungry with a grumpy face 😾💢 until you feed it a cookie! 🍪
 
-![Pixel Cat Sprites Preview](art/sprites/preview_all.png)
+<p align="center">
+  <img src="visuals/ScreenRecord.gif" width="340" alt="Pixel Cat in Action" />
+</p>
+
+<p align="center">
+  <img src="art/sprites/preview_all.png" width="85%" alt="Pixel Cat Sprites Preview" />
+</p>
 
 > Built natively as a **GNOME Shell extension** (GNOME 45 – 50+ on Wayland / X11). On Wayland, ordinary desktop apps cannot read global mouse coordinates or display click-through overlays above all windows. Pixel Cat runs inside the GNOME compositor, giving you seamless cursor tracking and a persistent desktop pet with near-zero CPU and memory footprint.
 
@@ -69,6 +75,11 @@ To customize timers, scales, or test states:
    - Click <kbd>👀 Wake</kbd> to wake it back up.
 3. **Speed up timers for testing**:
    - Set **Fall asleep after** or **Gets hungry after** to `5`–`10` seconds to test the automatic timer transitions in real-time.
+
+<p align="center">
+  <img src="visuals/Extension-Settings-1.png" width="48%" alt="Pixel Cat Appearance and Timers Settings" />
+  <img src="visuals/Extension-Settings-2.png" width="48%" alt="Pixel Cat Instant Test Actions & Message Settings" />
+</p>
 
 ---
 
