@@ -35,28 +35,40 @@ Its eyes follow your mouse cursor smoothly across screens, it blinks naturally, 
 
 ---
 
-## 🚀 Quick Start (Fedora Workstation)
+## 🚀 Installation
 
-Pixel Cat comes with pre-compiled pixel-art assets ready to go. No compilation, Node, or Python dependencies are required for basic installation!
+### Option A: Install from Release Zip (Quickest & Easiest)
 
-### 1. Install Dependencies
+No need to clone the repository or use build tools!
 
-```bash
-# Most are already installed on Fedora Workstation:
-sudo dnf install gnome-shell gnome-extensions-app glib2-devel
-```
+1. Download **`pixelcat@sakin.shell-extension.zip`** from the **[Latest Release](https://github.com/sakincse21/PixelCat/releases/latest)**.
+2. Install it via terminal:
+   ```bash
+   gnome-extensions install --force pixelcat@sakin.shell-extension.zip
+   ```
+3. **Log out and log back in once** (on Wayland, GNOME Shell cannot reload in-place).
+4. Enable the extension (if not already enabled automatically):
+   ```bash
+   gnome-extensions enable pixelcat@sakin
+   ```
 
-### 2. Clone & Install
+---
 
-```bash
-git clone https://github.com/sakincse21/PixelCat.git
-cd PixelCat
-bash install.sh
-```
+### Option B: Install from Source (Git Clone)
 
-### 3. Log out and back in
+Pre-compiled pixel-art assets are already included. No Node or Python build dependencies are required!
 
-On Wayland, GNOME Shell cannot restart in-place (`Alt`+`F2` `r` is disabled). Log out and log back in once. The cat will appear in your chosen desktop corner!
+1. **Install dependencies** (most are already on Fedora Workstation):
+   ```bash
+   sudo dnf install gnome-shell gnome-extensions-app glib2-devel
+   ```
+2. **Clone & install**:
+   ```bash
+   git clone https://github.com/sakincse21/PixelCat.git
+   cd PixelCat
+   bash install.sh
+   ```
+3. **Log out and log back in once**. The cat will appear in your chosen desktop corner!
 
 ---
 
