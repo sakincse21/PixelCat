@@ -22,7 +22,6 @@ art/sprites/*
 !art/sprites/preview_all.png
 
 # Build artifacts & packages
-dist/
 *.shell-extension.zip
 *.zip
 
